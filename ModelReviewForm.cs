@@ -68,16 +68,6 @@ namespace ModelReviewApp
             this.Location = new Point(pos.X + 570, pos.Y - 250);
         }
 
-        //private void Stage4Import_Click_1(object sender, System.EventArgs e)
-        //{
-        //    if (e.Button == MouseButtons.Left && (Control.ModifierKeys & Keys.Control) == Keys.Control)
-        //    {
-        //        MessageBox.Show("Test");
-        //    }
-
-        //    ChangeClass("1");
-        //}
-
         private void button1_Click(object sender, System.EventArgs e)
         {
             ChangeClass("13");
