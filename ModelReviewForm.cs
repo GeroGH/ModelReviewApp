@@ -14,11 +14,6 @@ namespace ModelReviewApp
             this.TopMost = true;
         }
 
-        private void Stage4Import_Click(object sender, System.EventArgs e)
-        {
-            ChangeClass("1");
-        }
-
         private static void ChangeClass(string partClass)
         {
             var model = new Model();
@@ -95,12 +90,58 @@ namespace ModelReviewApp
 
         private void Stage4Import_MouseClick(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left && (Control.ModifierKeys & Keys.Control) == Keys.Control)
+            var result = string.Empty;
+            if (e.Button == MouseButtons.Left && (Control.ModifierKeys & Keys.Shift) == Keys.Shift)
             {
-                MessageBox.Show("Control + Mouse ...");
+                result = ShowCommentDialog();
+
             }
 
             ChangeClass("1");
+            ChangeComment(result);
+        }
+
+        private static void ChangeComment(string result)
+        {
+            MessageBox.Show(result);
+        }
+
+        private static string ShowCommentDialog()
+        {
+            using (var form = new Form())
+            using (var textBox = new TextBox())
+            {
+                form.Text = "Enter new value for the comment and press enter ...";
+                form.StartPosition = FormStartPosition.CenterParent;
+
+                form.FormBorderStyle = FormBorderStyle.FixedDialog;
+                form.ClientSize = new Size(450, 70);
+                form.MinimizeBox = false;
+                form.MaximizeBox = false;
+                form.TopMost = true;
+
+                textBox.Multiline = false;
+                textBox.SetBounds(20, 20, 400, 20);
+
+                textBox.KeyDown += (s, e) =>
+                {
+                    if (e.KeyCode == Keys.Enter)
+                    {
+                        form.DialogResult = DialogResult.OK;
+                        form.Close();
+                    }
+
+                    if (e.KeyCode == Keys.Escape)
+                    {
+                        form.DialogResult = DialogResult.Cancel;
+                        form.Close();
+                    }
+                };
+
+                form.Controls.Add(textBox);
+
+                return form.ShowDialog() == DialogResult.OK ? textBox.Text : null;
+            }
         }
     }
 }
