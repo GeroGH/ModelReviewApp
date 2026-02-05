@@ -52,7 +52,7 @@
             // 
             // ReadyToBeConected
             // 
-            this.ReadyToBeConected.BackColor = System.Drawing.Color.LimeGreen;
+            this.ReadyToBeConected.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(0)))));
             this.ReadyToBeConected.Location = new System.Drawing.Point(6, 19);
             this.ReadyToBeConected.Name = "ReadyToBeConected";
             this.ReadyToBeConected.Size = new System.Drawing.Size(103, 51);
@@ -63,7 +63,7 @@
             // 
             // UnderReviewType1
             // 
-            this.UnderReviewType1.BackColor = System.Drawing.Color.Orange;
+            this.UnderReviewType1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(180)))), ((int)(((byte)(0)))));
             this.UnderReviewType1.Location = new System.Drawing.Point(6, 17);
             this.UnderReviewType1.Name = "UnderReviewType1";
             this.UnderReviewType1.Size = new System.Drawing.Size(103, 51);
@@ -86,7 +86,7 @@
             // 
             // UnderReviewType3
             // 
-            this.UnderReviewType3.BackColor = System.Drawing.Color.Orchid;
+            this.UnderReviewType3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.UnderReviewType3.Location = new System.Drawing.Point(6, 131);
             this.UnderReviewType3.Name = "UnderReviewType3";
             this.UnderReviewType3.Size = new System.Drawing.Size(103, 51);
@@ -97,7 +97,7 @@
             // 
             // UnderReviewType2
             // 
-            this.UnderReviewType2.BackColor = System.Drawing.Color.Coral;
+            this.UnderReviewType2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.UnderReviewType2.Location = new System.Drawing.Point(6, 74);
             this.UnderReviewType2.Name = "UnderReviewType2";
             this.UnderReviewType2.Size = new System.Drawing.Size(103, 51);
@@ -120,7 +120,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Orange;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(180)))), ((int)(((byte)(0)))));
             this.button1.Location = new System.Drawing.Point(6, 17);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 51);
@@ -131,7 +131,7 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Orchid;
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.button4.Location = new System.Drawing.Point(6, 131);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(103, 51);
@@ -142,7 +142,7 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.Coral;
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.button5.Location = new System.Drawing.Point(6, 74);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(103, 51);
@@ -153,7 +153,7 @@
             // 
             // ReadyForEditting
             // 
-            this.ReadyForEditting.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.ReadyForEditting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
             this.ReadyForEditting.Location = new System.Drawing.Point(6, 76);
             this.ReadyForEditting.Name = "ReadyForEditting";
             this.ReadyForEditting.Size = new System.Drawing.Size(103, 51);
@@ -164,7 +164,7 @@
             // 
             // TempWorksReady
             // 
-            this.TempWorksReady.BackColor = System.Drawing.Color.Yellow;
+            this.TempWorksReady.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(230)))), ((int)(((byte)(70)))));
             this.TempWorksReady.Location = new System.Drawing.Point(6, 20);
             this.TempWorksReady.Name = "TempWorksReady";
             this.TempWorksReady.Size = new System.Drawing.Size(103, 51);
@@ -185,7 +185,7 @@
             // 
             // Stage4Import
             // 
-            this.Stage4Import.BackColor = System.Drawing.Color.LightGray;
+            this.Stage4Import.BackColor = System.Drawing.Color.Silver;
             this.Stage4Import.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Stage4Import.Location = new System.Drawing.Point(6, 19);
             this.Stage4Import.Name = "Stage4Import";
