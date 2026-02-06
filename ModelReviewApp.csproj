@@ -92,6 +92,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReviewClass.cs" />
     <EmbeddedResource Include="ModelReviewForm.resx">
       <DependentUpon>ModelReviewForm.cs</DependentUpon>
     </EmbeddedResource>
